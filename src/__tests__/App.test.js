@@ -1,9 +1,9 @@
 import React from "react";
 import { shallow } from "enzyme";
 
-import App from "./App";
-import CommentBox from "./CommentBox";
-import CommentList from "./CommentList";
+import App from "../App";
+import CommentBox from "../CommentBox";
+import CommentList from "../CommentList";
 
 // it("renders app component correctly", () => {
 //     // Creates a DOM inside testing terminal
@@ -18,9 +18,11 @@ import CommentList from "./CommentList";
 
 describe("App", () => {
     let wrapper;
+    // this block runs before each expectation
     beforeEach(() => {
         wrapper = shallow(<App />);
     });
+
     it("renders <CommentBox /> component", () => {
         expect(wrapper.find(CommentBox).length).toEqual(1);
     });

@@ -19,6 +19,7 @@ export default class CommentBox extends React.Component {
                         />
                     </div>
                     <button>Submit</button>
+                    <button>Cancel</button>
                 </form>
             </div>
         );
